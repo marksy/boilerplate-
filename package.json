@@ -1,7 +1,7 @@
 {
-  "name": "dashboard",
+  "name": "boilerplate",
   "version": "1.0.0",
-  "description": "try make a deal with the devil",
+  "description": "base application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,12 +9,8 @@
   "author": "Mark Chambers",
   "license": "ISC",
   "devDependencies": {
-    "angular": "^1.6.1",
-    "angular-ui-router": "^0.3.2",
-    "angularfire": "^2.2.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.1",
-    "firebase": "^3.6.4",
     "glob": "^7.1.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
@@ -29,10 +25,9 @@
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
-    "moment": "^2.17.1",
+    "moment": "^2.15.2",
     "os": "^0.1.1",
     "run-sequence": "^1.2.2",
-    "ui-router": "^1.0.0-alpha.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
