@@ -89,14 +89,24 @@
       .pipe(connect.reload());
   });
 
+  gulp.task('sass', () => {
+      gulp.src(config.paths.sass)
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(config.paths.dist + '/assets/css/'))
+        .pipe(connect.reload());
+  });
 
   gulp.task('watch', () => {
     gulp.watch(config.paths.html, ['html']);
+    gulp.watch(config.paths.sass, ['sass']);
     gulp.watch(config.paths.js, ['js', 'jshint']);
   });
 
   gulp.task('default', [
     'js',
+    'sass',
     'html',
     'open',
     'watch'
